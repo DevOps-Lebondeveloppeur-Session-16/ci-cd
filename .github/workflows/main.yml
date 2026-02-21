@@ -1,0 +1,13 @@
+name: First_Workflow
+
+on:
+    push:
+        branches:
+            - main
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        steps:
+            - name: list folders
+              run: ls -l
